@@ -24,11 +24,10 @@ const createTabs = () => {
   const setActiveTab = (selectedTab) => {
     const navLinks = navList.getElementsByTagName("a");
     for (let i = 0; i < navLinks.length; i++) {
-      if (navLinks[i] === selectedTab) {
-        navLinks[i].style.backgroundColor = "rgb(241, 241, 108)";
-      } else {
-        navLinks[i].style.backgroundColor = "rgb(239, 179, 179)";
-      }
+      navLinks[i].style.backgroundColor =
+        navLinks[i] === selectedTab
+          ? "rgb(241, 241, 108)"
+          : "rgb(239, 179, 179)";
     }
   };
 
