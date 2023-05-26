@@ -17,12 +17,12 @@ const home = () => {
   descContainer.appendChild(descText);
 
   const openingHourContainer = document.createElement("div");
-  openingHourContainer.classList.add('child-container');
+  openingHourContainer.classList.add("child-container");
   const hourText = document.createElement("h4");
   hourText.classList.add("sub-heading");
   hourText.innerText = "Hour";
   const scheduleElement = document.createElement("div");
-  scheduleElement.classList.add('time-table')
+  scheduleElement.classList.add("time-table");
   const schedule = {
     Sunday: "8am - 8pm",
     Monday: "6am - 6pm",
@@ -34,23 +34,23 @@ const home = () => {
   };
   for (const day in schedule) {
     const scheduleItem = document.createElement("p");
-    scheduleItem.style.fontWeight ='bold';
+    scheduleItem.style.fontWeight = "bold";
     scheduleItem.textContent = `${day}: ${schedule[day]}`;
     scheduleElement.appendChild(scheduleItem);
   }
   openingHourContainer.appendChild(hourText);
   openingHourContainer.appendChild(scheduleElement);
 
-  const locationContainer = document.createElement('div');
-  locationContainer.classList.add('child-container');
-  const locationHeadingText = document.createElement('h4');
-  locationHeadingText.classList.add('sub-heading');
+  const locationContainer = document.createElement("div");
+  locationContainer.classList.add("child-container");
+  const locationHeadingText = document.createElement("h4");
+  locationHeadingText.classList.add("sub-heading");
   locationHeadingText.innerText = "Location";
-  const addressText = document.createElement('p');
-  addressText.classList.add('text');
-  addressText.innerText = "Bangalore, India"
+  const addressText = document.createElement("p");
+  addressText.classList.add("text");
+  addressText.innerText = "Bangalore, India";
   locationContainer.appendChild(locationHeadingText);
-  locationContainer.appendChild(addressText)
+  locationContainer.appendChild(addressText);
 
   mainContainer.appendChild(descContainer);
   mainContainer.appendChild(openingHourContainer);
