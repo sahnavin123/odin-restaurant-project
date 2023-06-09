@@ -10,7 +10,7 @@ const home = () => {
   heading.classList.add("heading-text");
   mainContainer.appendChild(heading);
 
-  // description container is created containing description of restaurant
+  // description container is created, it containins description of restaurant
   const descContainer = document.createElement("div");
   descContainer.classList.add("child-container");
   const descText = document.createElement("p");
@@ -19,14 +19,14 @@ const home = () => {
     "Experience a culinary paradise of vegetarian delights at Foodie Veg Restro, where exquisite flavors and a vibrant ambiance come together for an unforgettable dining experience. Indulge in thoughtfully crafted dishes that ignite your taste buds and create cherished moments with loved ones.";
   descContainer.appendChild(descText);
 
-  //Opening hour continer is created containing opening our of the restaurant
+  //Opening hour continer is created, it contains opening our of the restaurant
   const openingHourContainer = document.createElement("div");
   openingHourContainer.classList.add("child-container");
 
   const hourText = document.createElement("h4");
   hourText.classList.add("sub-heading");
   hourText.innerText = "Hour";
-  
+
   const scheduleElement = document.createElement("div");
   scheduleElement.classList.add("time-table");
   const schedule = {

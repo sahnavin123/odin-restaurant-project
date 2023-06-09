@@ -5,7 +5,7 @@ import contact from "./contact";
 const createTabs = () => {
   const content = document.getElementById("content");
 
-  //navbar created
+  //navbar is created
   const navContainer = document.createElement("nav");
   const navList = document.createElement("ul");
 
@@ -42,7 +42,7 @@ const createTabs = () => {
 
   navContainer.appendChild(navList);
 
-  //navbar appended to content container
+  //navbar is appended to content container
   content.appendChild(navContainer);
 };
 
