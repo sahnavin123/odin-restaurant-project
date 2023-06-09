@@ -1,7 +1,10 @@
 const contact = () => {
   const content = document.getElementById("content");
+  // a div main container is created under content container
   const mainContainer = document.createElement("div");
   mainContainer.classList.add("main-container");
+
+  // a contact container is created and appended to main container
   const contactContainer = document.createElement("div");
   contactContainer.classList.add("child-container");
   const contactDetails = document.createElement("div");
