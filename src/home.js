@@ -22,12 +22,13 @@ const home = () => {
   //Opening hour continer is created containing opening our of the restaurant
   const openingHourContainer = document.createElement("div");
   openingHourContainer.classList.add("child-container");
+
   const hourText = document.createElement("h4");
   hourText.classList.add("sub-heading");
   hourText.innerText = "Hour";
+  
   const scheduleElement = document.createElement("div");
   scheduleElement.classList.add("time-table");
-
   const schedule = {
     Sunday: "8am - 8pm",
     Monday: "6am - 6pm",
